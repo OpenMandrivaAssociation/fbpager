@@ -5,6 +5,7 @@ Summary:          fbpager is a workspace pager dockapp for Fluxbox
 License:          MIT
 Group:            User Interface/Desktops
 Source:           %{name}-%{version}.tar.gz
+Patch0:           01-fix_g++_build_error.patch
 URL:              http://fluxbox.sourceforge.net/fbpager/
 BuildRoot:        %{_tmppath}/%{name}-%{version}-root
 
@@ -21,6 +22,8 @@ files.
 %prep
 
 %setup -q
+
+%patch0 -p0
 
 %build
 %configure2_5x
