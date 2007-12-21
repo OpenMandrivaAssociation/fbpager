@@ -7,6 +7,7 @@ Group:            Graphical desktop/Other
 Source:           %{name}-%{version}.tar.gz
 Patch0:           01-fix_g++_build_error.patch
 URL:              http://fluxbox.sourceforge.net/fbpager/
+BuildRoot:        %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires:    X11-devel libstdc++-devel
 Requires:         libxorg-x11 fluxbox libstdc++
