@@ -1,7 +1,7 @@
 Name:             fbpager
 Version:          0.1.4
 Release:          %mkrel 1
-Summary:          fbpager is a workspace pager dockapp for Fluxbox
+Summary:          Workspace pager dockapp for Fluxbox
 License:          MIT
 Group:            Graphical desktop/Other
 Source:           %{name}-%{version}.tar.gz
