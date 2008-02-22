@@ -1,6 +1,6 @@
 Name:             fbpager
 Version:          0.1.4
-Release:          %mkrel 2
+Release:          %mkrel 3
 Summary:          Workspace pager dockapp for Fluxbox
 License:          MIT
 Group:            Graphical desktop/Other
@@ -10,7 +10,7 @@ URL:              http://fluxbox.sourceforge.net/fbpager/
 BuildRoot:        %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires:    X11-devel libstdc++-devel
-Requires:         libxorg-x11 fluxbox libstdc++
+Requires:         fluxbox
 
 %description
 Fbpager is a workspace pager dockapp, particularly useful with the
