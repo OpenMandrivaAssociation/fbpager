@@ -6,6 +6,7 @@ License:          MIT
 Group:            Graphical desktop/Other
 Source:           %{name}-%{version}.tar.gz
 Patch0:           01-fix_g++_build_error.patch
+Patch1:		  fbpager-0.1.4-gcc43.patch
 URL:              http://fluxbox.sourceforge.net/fbpager/
 BuildRoot:        %{_tmppath}/%{name}-%{version}-root
 
@@ -20,16 +21,16 @@ For additional information, see the included README and INSTALL text
 files.
 
 %prep
-
 %setup -q
-
 %patch0 -p0
+%patch1 -p0
 
 %build
 %configure2_5x
 %make
 
 %install
+rm -fr %buildroot
 %makeinstall_std
 
 %clean
