@@ -1,6 +1,6 @@
 Name:             fbpager
 Version:          0.1.4
-Release:          %mkrel 7
+Release:          %mkrel 8
 Summary:          Workspace pager dockapp for Fluxbox
 License:          MIT
 Group:            Graphical desktop/Other
@@ -9,8 +9,8 @@ Patch0:           01-fix_g++_build_error.patch
 Patch1:		  fbpager-0.1.4-gcc43.patch
 URL:              http://fluxbox.sourceforge.net/fbpager/
 BuildRoot:        %{_tmppath}/%{name}-%{version}-root
-
-BuildRequires:    X11-devel libstdc++-devel
+BuildRequires:    libx11-devel
+BuildRequires:    libxrender-devel
 Requires:         fluxbox
 
 %description
