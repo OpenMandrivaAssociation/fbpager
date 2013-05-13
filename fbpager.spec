@@ -9,8 +9,8 @@ Patch0:           01-fix_g++_build_error.patch
 Patch1:		  fbpager-0.1.4-gcc43.patch
 URL:              http://fluxbox.sourceforge.net/fbpager/
 BuildRoot:        %{_tmppath}/%{name}-%{version}-root
-BuildRequires:    libx11-devel
-BuildRequires:    libxrender-devel
+BuildRequires:    pkgconfig(x11)
+BuildRequires:    pkgconfig(xrender)
 Requires:         fluxbox
 
 %description
