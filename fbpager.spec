@@ -7,7 +7,7 @@ Group:            Graphical desktop/Other
 Source:           %{name}-%{version}.tar.gz
 Patch0:           01-fix_g++_build_error.patch
 Patch1:		  fbpager-0.1.4-gcc43.patch
-URL:              http://fluxbox.sourceforge.net/fbpager/
+URL:              https://fluxbox.sourceforge.net/fbpager/
 BuildRequires:    pkgconfig(x11)
 BuildRequires:    pkgconfig(xrender)
 Requires:         fluxbox
