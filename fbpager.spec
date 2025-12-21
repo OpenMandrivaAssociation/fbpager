@@ -8,6 +8,11 @@ Source:           %{name}-%{version}.tar.gz
 Patch0:           01-fix_g++_build_error.patch
 Patch1:		  fbpager-0.1.4-gcc43.patch
 URL:              https://fluxbox.sourceforge.net/fbpager/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:    pkgconfig(x11)
 BuildRequires:    pkgconfig(xrender)
 Requires:         fluxbox
